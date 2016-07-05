@@ -3,7 +3,7 @@
 //  newCampus
 //
 //  Created by YYDD on 16/3/15.
-//  Copyright © 2016年 com.campus.cn. All rights reserved.
+//  Copyright © 2016年 com.shudong.urlRoute. All rights reserved.
 //
 
 #import "SDCUrlRouteCenter.h"
