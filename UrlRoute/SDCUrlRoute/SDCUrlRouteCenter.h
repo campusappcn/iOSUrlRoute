@@ -6,12 +6,11 @@
 //  Copyright © 2016年 com.campus.cn. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "SDCUrlRouteConfig.h"
 
 
 NSString* localRouteUrl(NSString *routekey);
-
 
 @interface SDCUrlRouteCenter : NSObject
 

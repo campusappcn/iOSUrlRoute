@@ -9,6 +9,8 @@
 #import "SDCUrlRouteCenter.h"
 #import "SDCUrlRouteData.h"
 
+#import "UIApplication+SDCUrlRoute.h"
+
 NSString* localRouteUrl(NSString *routekey)
 {
     return [LocalRouteUrlPrefix stringByAppendingString:routekey];
@@ -108,7 +110,6 @@ NSString* localRouteUrl(NSString *routekey)
 
 -(void)goToVC:(UIViewController *)vc animated:(BOOL)animated URLRedirectType:(UrlRedirectType)type
 {
-
     switch (type) {
         case kUrlRedirectPop:
             [self popToVC:vc animated:animated];
@@ -123,6 +124,7 @@ NSString* localRouteUrl(NSString *routekey)
             [self dismissToVC:vc animated:animated];
             break;
         default:
+            [self goToErrorVC];
             break;
     }
 }

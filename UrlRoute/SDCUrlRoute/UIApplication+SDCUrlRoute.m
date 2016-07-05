@@ -1,15 +1,15 @@
 //
-//  UIApplication+CurrentViewController.m
-//  campus
+//  UIApplication+SDCUrlRoute.m
+//  UrlRouteSample
 //
-//  Created by Kael on 8/13/15.
-//  Copyright (c) 2015 com.treeholeapp.campus. All rights reserved.
+//  Created by YYDD on 16/7/4.
+//  Copyright © 2016年 com.shudong.urlRoute. All rights reserved.
 //
 
-#import "UIApplication+CurrentViewController.h"
+#import "UIApplication+SDCUrlRoute.h"
 #import <objc/runtime.h>
 
-@implementation UIApplication (CurrentViewController)
+@implementation UIApplication (SDCUrlRoute)
 
 -(void)setCurrentViewController:(UIViewController *)currentViewController
 {

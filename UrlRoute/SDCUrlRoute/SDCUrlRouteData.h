@@ -6,7 +6,6 @@
 //  Copyright © 2016年 com.campus.cn. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 @interface SDCUrlRouteData : NSObject

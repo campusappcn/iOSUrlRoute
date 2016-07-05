@@ -7,6 +7,7 @@
 //
 
 #import "SDCUrlRouteData.h"
+#import "UIViewController+SDCUrlRoute.h"
 #import "SDCUrlRouteConfig.h"
 
 @interface SDCUrlRouteData()
@@ -97,7 +98,7 @@
     }
     
     Class class = [[SDCUrlRouteData sharedData]classFromUrlKey:key];
-    CurrentViewController *vc = nil;
+    UIViewController *vc = nil;
     
 #pragma clang diagnostic ignored "-Warc-createdRouteVCWithParams:-leaks"
     if ([class respondsToSelector:@selector(createdRouteVCWithParams:)]) {

@@ -7,7 +7,8 @@
 //
 
 #import "TestViewController.h"
-#import "SDCUrlRouteCenter.h"
+
+#import "SDCUrlRoute.h"
 
 @interface TestViewController()
 
@@ -19,6 +20,8 @@
 
 +(instancetype)createdRouteVCWithParams:(NSDictionary *)params
 {
+    
+    [super createdRouteVCWithParams:params];
     
     TestViewController *vc = [[TestViewController alloc]init];
     if (params) {
@@ -60,8 +63,8 @@
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-    if (self.routeReloadBlock) {
-        self.routeReloadBlock(self.valueStr);
+    if (self.routeReCallBlock) {
+        self.routeReCallBlock(self.valueStr);
     }
 
 }

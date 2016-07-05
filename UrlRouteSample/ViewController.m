@@ -7,16 +7,21 @@
 //
 
 #import "ViewController.h"
-#import "SDCUrlRouteCenter.h"
-#import "SDCUrlRouteCenter+DataReload.h"
-
-#import "SDCUrlRouteData.h"
+#import "SDCUrlRoute.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
 @implementation ViewController
+
++(instancetype)createdRouteVCWithParams:(NSDictionary *)params
+{
+    ViewController *vc = [[ViewController alloc]init];
+    return vc;
+    
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,6 +35,12 @@
     
     
 }
+
+//-(void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//
+//}
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

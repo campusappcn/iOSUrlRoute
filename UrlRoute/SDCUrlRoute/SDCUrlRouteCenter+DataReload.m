@@ -7,6 +7,7 @@
 //
 
 #import "SDCUrlRouteCenter+DataReload.h"
+
 #import "SDCUrlRouteData.h"
 
 @implementation SDCUrlRouteCenter (DataReload)
@@ -19,7 +20,7 @@
  */
 - (void)open:(NSString *)urlkey
     animated:(BOOL)animated
-WithReloadBlock:(DataReloadBlock)block
+WithReloadBlock:(DataReCallBlock)block
 {
     [self open:urlkey animated:animated URLRedirectType:kUrlRedirectPush extraParams:nil WithReloadBlock:block];
 }
@@ -34,7 +35,7 @@ WithReloadBlock:(DataReloadBlock)block
 - (void)open:(NSString *)urlkey
     animated:(BOOL)animated
  extraParams:(NSDictionary *)extraParams
-WithReloadBlock:(DataReloadBlock)block
+WithReloadBlock:(DataReCallBlock)block
 {
     [self open:urlkey animated:animated URLRedirectType:kUrlRedirectPush extraParams:extraParams WithReloadBlock:block];
 }
@@ -50,7 +51,7 @@ WithReloadBlock:(DataReloadBlock)block
 - (void)open:(NSString *)urlkey
     animated:(BOOL)animated
 URLRedirectType:(UrlRedirectType)type
-WithReloadBlock:(DataReloadBlock)block
+WithReloadBlock:(DataReCallBlock)block
 {
     [self open:urlkey animated:animated URLRedirectType:type extraParams:nil WithReloadBlock:block];
 }
@@ -67,7 +68,7 @@ WithReloadBlock:(DataReloadBlock)block
     animated:(BOOL)animated
 URLRedirectType:(UrlRedirectType)type
  extraParams:(NSDictionary *)extraParams
-WithReloadBlock:(DataReloadBlock)block
+WithReloadBlock:(DataReCallBlock)block
 {
     if (urlkey.length == 0) {
         return;
@@ -83,7 +84,7 @@ WithReloadBlock:(DataReloadBlock)block
         }
         
         UIViewController *vc = [[SDCUrlRouteData sharedData]findVCWithUrlKey:urlkey extraParams:extraParams];
-        ((CurrentViewController *)vc).routeReloadBlock = block;
+        vc.routeReCallBlock = block;
         [self goToVC:vc animated:animated URLRedirectType:type];
     }
 }

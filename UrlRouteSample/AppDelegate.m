@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "SDCUrlRoute.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
-    ViewController *vc = [[ViewController alloc]init];
+    ViewController *vc = [ViewController createdRouteVCWithParams:nil];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = nav;
     

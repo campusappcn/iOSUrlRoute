@@ -7,7 +7,7 @@
 //
 
 #import "SDCUrlRouteCenter.h"
-
+#import "UIViewController+SDCUrlRoute.h"
 
 @interface SDCUrlRouteCenter (DataReload)
 
@@ -20,7 +20,7 @@
  */
 - (void)open:(NSString *)urlkey
     animated:(BOOL)animated
-WithReloadBlock:(DataReloadBlock)block;
+WithReloadBlock:(DataReCallBlock)block;
 
 /**
  *  url跳转   默认是push操作
@@ -32,7 +32,7 @@ WithReloadBlock:(DataReloadBlock)block;
 - (void)open:(NSString *)urlkey
     animated:(BOOL)animated
  extraParams:(NSDictionary *)extraParams
-WithReloadBlock:(DataReloadBlock)block;
+WithReloadBlock:(DataReCallBlock)block;
 
 /**
  *  url跳转
@@ -46,7 +46,7 @@ WithReloadBlock:(DataReloadBlock)block;
     animated:(BOOL)animated
 URLRedirectType:(UrlRedirectType)type
  extraParams:(NSDictionary *)extraParams
-WithReloadBlock:(DataReloadBlock)block;
+WithReloadBlock:(DataReCallBlock)block;
 
 /**
  *  url跳转
@@ -58,7 +58,7 @@ WithReloadBlock:(DataReloadBlock)block;
 - (void)open:(NSString *)urlkey
     animated:(BOOL)animated
 URLRedirectType:(UrlRedirectType)type
-WithReloadBlock:(DataReloadBlock)block;
+WithReloadBlock:(DataReCallBlock)block;
 
 
 
