@@ -1,0 +1,8 @@
+# Xcode
+.DS_Store
+UrlRouteSample/Build/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+xcuserdata
+
