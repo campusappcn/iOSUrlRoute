@@ -9,6 +9,7 @@
 #import "SDCUrlRouteCenter+DataReload.h"
 
 #import "SDCUrlRouteData.h"
+#import "SDCUrlRouteCenter_Protect.h"
 
 @implementation SDCUrlRouteCenter (DataReload)
 

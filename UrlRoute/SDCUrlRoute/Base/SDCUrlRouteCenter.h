@@ -82,13 +82,6 @@ NSString* localRouteUrl(NSString *routekey);
 
 
 
--(void)goToVC:(UIViewController *)vc animated:(BOOL)animated URLRedirectType:(UrlRedirectType)type;
-
--(void)goToWeb:(NSString *)urlStr animated:(BOOL)animated URLRedirectType:(UrlRedirectType)type;
-
-
-
-
 /**
  *  进入一个统一的 错误页面
  */

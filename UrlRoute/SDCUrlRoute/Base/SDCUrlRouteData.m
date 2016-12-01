@@ -9,10 +9,12 @@
 #import "SDCUrlRouteData.h"
 #import "UIViewController+SDCUrlRoute.h"
 #import "SDCUrlRouteConfig.h"
+#import "SDCUrlRouteMapping.h"
+
 
 @interface SDCUrlRouteData()
 
-@property(nonatomic,strong)NSDictionary *urlRouteData;
+@property(nonatomic,strong)SDCUrlRouteMapping *routeMapping;
 
 @end
 
@@ -139,20 +141,13 @@
 
 
 #pragma mark -- private Method
-
-
 //读取对应的列表
--(NSDictionary *)urlRouteData
-{
-    if (!_urlRouteData) {
-        
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"SDCUrlRouteFile" ofType:@"plist" inDirectory:nil];
-        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:filePath];
-        _urlRouteData = dict;
+-(SDCUrlRouteMapping *)routeMapping {
+    if (!_routeMapping) {
+        _routeMapping = [[SDCUrlRouteMapping alloc]init];
     }
-    return _urlRouteData;
+    return _routeMapping;
 }
-
 
 //根据类的字符串名字 返回类
 -(Class)classFromClassName:(NSString *)name
@@ -210,7 +205,7 @@
         classNameKey = str;
     }
     
-    return self.urlRouteData[classNameKey];
+    return self.routeMapping.mappingData[classNameKey];
 }
 
 

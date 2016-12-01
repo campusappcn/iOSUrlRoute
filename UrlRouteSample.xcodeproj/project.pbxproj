@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180D49101D51849000E2F138 /* SDCUrlRouteCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 180D49021D51849000E2F138 /* SDCUrlRouteCenter.m */; };
+		180D49111D51849000E2F138 /* SDCUrlRouteData.m in Sources */ = {isa = PBXBuildFile; fileRef = 180D49061D51849000E2F138 /* SDCUrlRouteData.m */; };
+		180D49121D51849000E2F138 /* UIApplication+SDCUrlRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 180D49081D51849000E2F138 /* UIApplication+SDCUrlRoute.m */; };
+		180D49131D51849000E2F138 /* UIViewController+SDCUrlRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 180D490A1D51849000E2F138 /* UIViewController+SDCUrlRoute.m */; };
+		180D49141D51849000E2F138 /* SDCUrlRouteFile.plist in Resources */ = {isa = PBXBuildFile; fileRef = 180D490C1D51849000E2F138 /* SDCUrlRouteFile.plist */; };
+		180D49151D51849000E2F138 /* SDCUrlRouteCenter+DataReload.m in Sources */ = {isa = PBXBuildFile; fileRef = 180D490F1D51849000E2F138 /* SDCUrlRouteCenter+DataReload.m */; };
 		186CF8BC1CA1523B002BBF61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CF8BB1CA1523B002BBF61 /* main.m */; };
 		186CF8BF1CA1523B002BBF61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CF8BE1CA1523B002BBF61 /* AppDelegate.m */; };
 		186CF8C21CA1523B002BBF61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CF8C11CA1523B002BBF61 /* ViewController.m */; };
 		186CF8C71CA1523B002BBF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186CF8C61CA1523B002BBF61 /* Assets.xcassets */; };
 		186CF8CA1CA1523B002BBF61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186CF8C81CA1523B002BBF61 /* LaunchScreen.storyboard */; };
 		186CF8E71CA154BC002BBF61 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CF8E61CA154BC002BBF61 /* TestViewController.m */; };
-		18EFD42B1D2B4B1600C908DD /* SDCUrlRouteCenter+DataReload.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFD41F1D2B4B1600C908DD /* SDCUrlRouteCenter+DataReload.m */; };
-		18EFD42C1D2B4B1600C908DD /* SDCUrlRouteCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFD4211D2B4B1600C908DD /* SDCUrlRouteCenter.m */; };
-		18EFD42D1D2B4B1600C908DD /* SDCUrlRouteData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFD4241D2B4B1600C908DD /* SDCUrlRouteData.m */; };
-		18EFD42E1D2B4B1600C908DD /* SDCUrlRouteFile.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18EFD4251D2B4B1600C908DD /* SDCUrlRouteFile.plist */; };
-		18EFD42F1D2B4B1600C908DD /* UIApplication+SDCUrlRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFD4271D2B4B1600C908DD /* UIApplication+SDCUrlRoute.m */; };
-		18EFD4301D2B4B1600C908DD /* UIViewController+SDCUrlRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFD4291D2B4B1600C908DD /* UIViewController+SDCUrlRoute.m */; };
+		18F4B9251DEFBC3400EBE375 /* SDCUrlRouteMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F4B9241DEFBC3400EBE375 /* SDCUrlRouteMapping.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		180D49011D51849000E2F138 /* SDCUrlRouteCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCUrlRouteCenter.h; sourceTree = "<group>"; };
+		180D49021D51849000E2F138 /* SDCUrlRouteCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCUrlRouteCenter.m; sourceTree = "<group>"; };
+		180D49031D51849000E2F138 /* SDCUrlRouteCenter_Protect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCUrlRouteCenter_Protect.h; sourceTree = "<group>"; };
+		180D49041D51849000E2F138 /* SDCUrlRouteConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCUrlRouteConfig.h; sourceTree = "<group>"; };
+		180D49051D51849000E2F138 /* SDCUrlRouteData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCUrlRouteData.h; sourceTree = "<group>"; };
+		180D49061D51849000E2F138 /* SDCUrlRouteData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCUrlRouteData.m; sourceTree = "<group>"; };
+		180D49071D51849000E2F138 /* UIApplication+SDCUrlRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+SDCUrlRoute.h"; sourceTree = "<group>"; };
+		180D49081D51849000E2F138 /* UIApplication+SDCUrlRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+SDCUrlRoute.m"; sourceTree = "<group>"; };
+		180D49091D51849000E2F138 /* UIViewController+SDCUrlRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SDCUrlRoute.h"; sourceTree = "<group>"; };
+		180D490A1D51849000E2F138 /* UIViewController+SDCUrlRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SDCUrlRoute.m"; sourceTree = "<group>"; };
+		180D490C1D51849000E2F138 /* SDCUrlRouteFile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SDCUrlRouteFile.plist; sourceTree = "<group>"; };
+		180D490E1D51849000E2F138 /* SDCUrlRouteCenter+DataReload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDCUrlRouteCenter+DataReload.h"; sourceTree = "<group>"; };
+		180D490F1D51849000E2F138 /* SDCUrlRouteCenter+DataReload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDCUrlRouteCenter+DataReload.m"; sourceTree = "<group>"; };
 		186CF8B71CA1523B002BBF61 /* UrlRouteSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrlRouteSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186CF8BB1CA1523B002BBF61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		186CF8BD1CA1523B002BBF61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,19 +47,9 @@
 		186CF8CB1CA1523B002BBF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		186CF8E51CA154BC002BBF61 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		186CF8E61CA154BC002BBF61 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		18EFD41E1D2B4B1600C908DD /* SDCUrlRouteCenter+DataReload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDCUrlRouteCenter+DataReload.h"; sourceTree = "<group>"; };
-		18EFD41F1D2B4B1600C908DD /* SDCUrlRouteCenter+DataReload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDCUrlRouteCenter+DataReload.m"; sourceTree = "<group>"; };
-		18EFD4201D2B4B1600C908DD /* SDCUrlRouteCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCUrlRouteCenter.h; sourceTree = "<group>"; };
-		18EFD4211D2B4B1600C908DD /* SDCUrlRouteCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCUrlRouteCenter.m; sourceTree = "<group>"; };
-		18EFD4221D2B4B1600C908DD /* SDCUrlRouteConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCUrlRouteConfig.h; sourceTree = "<group>"; };
-		18EFD4231D2B4B1600C908DD /* SDCUrlRouteData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCUrlRouteData.h; sourceTree = "<group>"; };
-		18EFD4241D2B4B1600C908DD /* SDCUrlRouteData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCUrlRouteData.m; sourceTree = "<group>"; };
-		18EFD4251D2B4B1600C908DD /* SDCUrlRouteFile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SDCUrlRouteFile.plist; sourceTree = "<group>"; };
-		18EFD4261D2B4B1600C908DD /* UIApplication+SDCUrlRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+SDCUrlRoute.h"; sourceTree = "<group>"; };
-		18EFD4271D2B4B1600C908DD /* UIApplication+SDCUrlRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+SDCUrlRoute.m"; sourceTree = "<group>"; };
-		18EFD4281D2B4B1600C908DD /* UIViewController+SDCUrlRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SDCUrlRoute.h"; sourceTree = "<group>"; };
-		18EFD4291D2B4B1600C908DD /* UIViewController+SDCUrlRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SDCUrlRoute.m"; sourceTree = "<group>"; };
 		18EFD42A1D2B4B1600C908DD /* SDCUrlRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCUrlRoute.h; sourceTree = "<group>"; };
+		18F4B9231DEFBC3400EBE375 /* SDCUrlRouteMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCUrlRouteMapping.h; sourceTree = "<group>"; };
+		18F4B9241DEFBC3400EBE375 /* SDCUrlRouteMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCUrlRouteMapping.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180D49001D51849000E2F138 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				180D49011D51849000E2F138 /* SDCUrlRouteCenter.h */,
+				180D49021D51849000E2F138 /* SDCUrlRouteCenter.m */,
+				180D49031D51849000E2F138 /* SDCUrlRouteCenter_Protect.h */,
+				180D49041D51849000E2F138 /* SDCUrlRouteConfig.h */,
+				180D49051D51849000E2F138 /* SDCUrlRouteData.h */,
+				180D49061D51849000E2F138 /* SDCUrlRouteData.m */,
+				18F4B9231DEFBC3400EBE375 /* SDCUrlRouteMapping.h */,
+				18F4B9241DEFBC3400EBE375 /* SDCUrlRouteMapping.m */,
+				180D49071D51849000E2F138 /* UIApplication+SDCUrlRoute.h */,
+				180D49081D51849000E2F138 /* UIApplication+SDCUrlRoute.m */,
+				180D49091D51849000E2F138 /* UIViewController+SDCUrlRoute.h */,
+				180D490A1D51849000E2F138 /* UIViewController+SDCUrlRoute.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		180D490B1D51849000E2F138 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				180D490C1D51849000E2F138 /* SDCUrlRouteFile.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		180D490D1D51849000E2F138 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				180D490E1D51849000E2F138 /* SDCUrlRouteCenter+DataReload.h */,
+				180D490F1D51849000E2F138 /* SDCUrlRouteCenter+DataReload.m */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
 		186CF8AE1CA1523B002BBF61 = {
 			isa = PBXGroup;
 			children = (
@@ -113,18 +153,9 @@
 		18EFD41D1D2B4B1600C908DD /* SDCUrlRoute */ = {
 			isa = PBXGroup;
 			children = (
-				18EFD41E1D2B4B1600C908DD /* SDCUrlRouteCenter+DataReload.h */,
-				18EFD41F1D2B4B1600C908DD /* SDCUrlRouteCenter+DataReload.m */,
-				18EFD4201D2B4B1600C908DD /* SDCUrlRouteCenter.h */,
-				18EFD4211D2B4B1600C908DD /* SDCUrlRouteCenter.m */,
-				18EFD4221D2B4B1600C908DD /* SDCUrlRouteConfig.h */,
-				18EFD4231D2B4B1600C908DD /* SDCUrlRouteData.h */,
-				18EFD4241D2B4B1600C908DD /* SDCUrlRouteData.m */,
-				18EFD4251D2B4B1600C908DD /* SDCUrlRouteFile.plist */,
-				18EFD4261D2B4B1600C908DD /* UIApplication+SDCUrlRoute.h */,
-				18EFD4271D2B4B1600C908DD /* UIApplication+SDCUrlRoute.m */,
-				18EFD4281D2B4B1600C908DD /* UIViewController+SDCUrlRoute.h */,
-				18EFD4291D2B4B1600C908DD /* UIViewController+SDCUrlRoute.m */,
+				180D49001D51849000E2F138 /* Base */,
+				180D490B1D51849000E2F138 /* Data */,
+				180D490D1D51849000E2F138 /* Ext */,
 			);
 			path = SDCUrlRoute;
 			sourceTree = "<group>";
@@ -186,7 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18EFD42E1D2B4B1600C908DD /* SDCUrlRouteFile.plist in Resources */,
+				180D49141D51849000E2F138 /* SDCUrlRouteFile.plist in Resources */,
 				186CF8CA1CA1523B002BBF61 /* LaunchScreen.storyboard in Resources */,
 				186CF8C71CA1523B002BBF61 /* Assets.xcassets in Resources */,
 			);
@@ -199,15 +230,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18EFD42D1D2B4B1600C908DD /* SDCUrlRouteData.m in Sources */,
+				180D49151D51849000E2F138 /* SDCUrlRouteCenter+DataReload.m in Sources */,
+				18F4B9251DEFBC3400EBE375 /* SDCUrlRouteMapping.m in Sources */,
+				180D49111D51849000E2F138 /* SDCUrlRouteData.m in Sources */,
 				186CF8C21CA1523B002BBF61 /* ViewController.m in Sources */,
+				180D49121D51849000E2F138 /* UIApplication+SDCUrlRoute.m in Sources */,
 				186CF8BF1CA1523B002BBF61 /* AppDelegate.m in Sources */,
 				186CF8BC1CA1523B002BBF61 /* main.m in Sources */,
+				180D49131D51849000E2F138 /* UIViewController+SDCUrlRoute.m in Sources */,
 				186CF8E71CA154BC002BBF61 /* TestViewController.m in Sources */,
-				18EFD42B1D2B4B1600C908DD /* SDCUrlRouteCenter+DataReload.m in Sources */,
-				18EFD4301D2B4B1600C908DD /* UIViewController+SDCUrlRoute.m in Sources */,
-				18EFD42C1D2B4B1600C908DD /* SDCUrlRouteCenter.m in Sources */,
-				18EFD42F1D2B4B1600C908DD /* UIApplication+SDCUrlRoute.m in Sources */,
+				180D49101D51849000E2F138 /* SDCUrlRouteCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
