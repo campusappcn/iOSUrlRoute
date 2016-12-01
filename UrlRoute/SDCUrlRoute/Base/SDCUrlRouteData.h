@@ -54,4 +54,6 @@
 
 -(BOOL)checkUrlPathValid:(NSString *)urlStr;
 
+-(Class)classFromUrlKey:(NSString *)urlkey;
+
 @end
