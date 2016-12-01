@@ -1,6 +1,6 @@
 # Xcode
 .DS_Store
-#Build/
+Build/
 *.xccheckout
 *.moved-aside
 *.xcuserstate
