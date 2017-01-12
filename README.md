@@ -9,6 +9,11 @@ UrlRoute makes popVC,pushVC,presentVC actions easier and more dynamically, while
 4. Launch your app via some scheme from a browser, or some other apps.
 
 
+####Feature in newFeature Branch
+1. Add Method for change tabBar
+2. Support just creating `UIViewController` for doing more thing
+
+
 ###Usage
 
 1. The window rootView must be `UINavigationController`
@@ -20,7 +25,7 @@ UrlRoute makes popVC,pushVC,presentVC actions easier and more dynamically, while
 
 ````
 
-2. All the viewController must be `CurrentViewController`'s child VC.
+2. ~~All the viewController must be `CurrentViewController`'s child VC.~~ this is now fixed,using category of `UIViewController`.
 
 3. Setup your personal url map in `SDCUrlRouteConfig.h`, `SDCUrlRouteFile.plist`
 

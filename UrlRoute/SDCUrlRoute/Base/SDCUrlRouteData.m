@@ -213,6 +213,10 @@
 {
     if (urlStr) {
 
+        if ([urlStr hasPrefix:@"http://"] || [urlStr hasPrefix:@"https://"]) {
+            return YES;
+        }
+        
         NSString *regx = @"(http[s]{0,1}|ftp)://[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&amp;*+?:_/=<>]*)?";
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regx];
         return [predicate evaluateWithObject:urlStr];

@@ -13,7 +13,6 @@
 		180D49131D51849000E2F138 /* UIViewController+SDCUrlRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 180D490A1D51849000E2F138 /* UIViewController+SDCUrlRoute.m */; };
 		180D49141D51849000E2F138 /* SDCUrlRouteFile.plist in Resources */ = {isa = PBXBuildFile; fileRef = 180D490C1D51849000E2F138 /* SDCUrlRouteFile.plist */; };
 		180D49151D51849000E2F138 /* SDCUrlRouteCenter+DataReload.m in Sources */ = {isa = PBXBuildFile; fileRef = 180D490F1D51849000E2F138 /* SDCUrlRouteCenter+DataReload.m */; };
-		18323E191DF029E300AD385A /* SDCUrlRouteCenter+ToRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 18323E181DF029E300AD385A /* SDCUrlRouteCenter+ToRoot.m */; };
 		186CF8BC1CA1523B002BBF61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CF8BB1CA1523B002BBF61 /* main.m */; };
 		186CF8BF1CA1523B002BBF61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CF8BE1CA1523B002BBF61 /* AppDelegate.m */; };
 		186CF8C21CA1523B002BBF61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CF8C11CA1523B002BBF61 /* ViewController.m */; };
@@ -21,6 +20,11 @@
 		186CF8CA1CA1523B002BBF61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186CF8C81CA1523B002BBF61 /* LaunchScreen.storyboard */; };
 		186CF8E71CA154BC002BBF61 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CF8E61CA154BC002BBF61 /* TestViewController.m */; };
 		18F4B9251DEFBC3400EBE375 /* SDCUrlRouteMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F4B9241DEFBC3400EBE375 /* SDCUrlRouteMapping.m */; };
+		96E568A81E27638F00311888 /* SDCUrlRouteCenter+VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E568A61E27638F00311888 /* SDCUrlRouteCenter+VC.m */; };
+		96E568C81E2765BC00311888 /* SDCWebManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E568C71E2765BC00311888 /* SDCWebManager.m */; };
+		96E568CB1E27666E00311888 /* SDCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E568CA1E27666E00311888 /* SDCWebViewController.m */; };
+		96E568CE1E27667900311888 /* SDCWkWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E568CD1E27667900311888 /* SDCWkWebViewController.m */; };
+		96E568D11E276DF800311888 /* SDCUrlRouteCenter+ToRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E568D01E276DF800311888 /* SDCUrlRouteCenter+ToRoot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +41,6 @@
 		180D490C1D51849000E2F138 /* SDCUrlRouteFile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SDCUrlRouteFile.plist; sourceTree = "<group>"; };
 		180D490E1D51849000E2F138 /* SDCUrlRouteCenter+DataReload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDCUrlRouteCenter+DataReload.h"; sourceTree = "<group>"; };
 		180D490F1D51849000E2F138 /* SDCUrlRouteCenter+DataReload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDCUrlRouteCenter+DataReload.m"; sourceTree = "<group>"; };
-		18323E171DF029E300AD385A /* SDCUrlRouteCenter+ToRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDCUrlRouteCenter+ToRoot.h"; sourceTree = "<group>"; };
-		18323E181DF029E300AD385A /* SDCUrlRouteCenter+ToRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDCUrlRouteCenter+ToRoot.m"; sourceTree = "<group>"; };
 		186CF8B71CA1523B002BBF61 /* UrlRouteSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrlRouteSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186CF8BB1CA1523B002BBF61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		186CF8BD1CA1523B002BBF61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +55,16 @@
 		18EFD42A1D2B4B1600C908DD /* SDCUrlRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCUrlRoute.h; sourceTree = "<group>"; };
 		18F4B9231DEFBC3400EBE375 /* SDCUrlRouteMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCUrlRouteMapping.h; sourceTree = "<group>"; };
 		18F4B9241DEFBC3400EBE375 /* SDCUrlRouteMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCUrlRouteMapping.m; sourceTree = "<group>"; };
+		96E568A51E27638F00311888 /* SDCUrlRouteCenter+VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDCUrlRouteCenter+VC.h"; sourceTree = "<group>"; };
+		96E568A61E27638F00311888 /* SDCUrlRouteCenter+VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDCUrlRouteCenter+VC.m"; sourceTree = "<group>"; };
+		96E568C61E2765BC00311888 /* SDCWebManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCWebManager.h; sourceTree = "<group>"; };
+		96E568C71E2765BC00311888 /* SDCWebManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCWebManager.m; sourceTree = "<group>"; };
+		96E568C91E27666E00311888 /* SDCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCWebViewController.h; sourceTree = "<group>"; };
+		96E568CA1E27666E00311888 /* SDCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCWebViewController.m; sourceTree = "<group>"; };
+		96E568CC1E27667900311888 /* SDCWkWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCWkWebViewController.h; sourceTree = "<group>"; };
+		96E568CD1E27667900311888 /* SDCWkWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCWkWebViewController.m; sourceTree = "<group>"; };
+		96E568CF1E276DF800311888 /* SDCUrlRouteCenter+ToRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDCUrlRouteCenter+ToRoot.h"; sourceTree = "<group>"; };
+		96E568D01E276DF800311888 /* SDCUrlRouteCenter+ToRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDCUrlRouteCenter+ToRoot.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,19 +108,14 @@
 		180D490D1D51849000E2F138 /* Ext */ = {
 			isa = PBXGroup;
 			children = (
+				96E568A51E27638F00311888 /* SDCUrlRouteCenter+VC.h */,
+				96E568A61E27638F00311888 /* SDCUrlRouteCenter+VC.m */,
+				96E568CF1E276DF800311888 /* SDCUrlRouteCenter+ToRoot.h */,
+				96E568D01E276DF800311888 /* SDCUrlRouteCenter+ToRoot.m */,
 				180D490E1D51849000E2F138 /* SDCUrlRouteCenter+DataReload.h */,
 				180D490F1D51849000E2F138 /* SDCUrlRouteCenter+DataReload.m */,
 			);
 			path = Ext;
-			sourceTree = "<group>";
-		};
-		18323E161DF029D900AD385A /* NewFeature */ = {
-			isa = PBXGroup;
-			children = (
-				18323E171DF029E300AD385A /* SDCUrlRouteCenter+ToRoot.h */,
-				18323E181DF029E300AD385A /* SDCUrlRouteCenter+ToRoot.m */,
-			);
-			path = NewFeature;
 			sourceTree = "<group>";
 		};
 		186CF8AE1CA1523B002BBF61 = {
@@ -130,6 +137,7 @@
 		186CF8B91CA1523B002BBF61 /* UrlRouteSample */ = {
 			isa = PBXGroup;
 			children = (
+				96E568B91E2765A300311888 /* WebView */,
 				186CF8D11CA152A7002BBF61 /* UrlRoute */,
 				186CF8BD1CA1523B002BBF61 /* AppDelegate.h */,
 				186CF8BE1CA1523B002BBF61 /* AppDelegate.m */,
@@ -165,13 +173,25 @@
 		18EFD41D1D2B4B1600C908DD /* SDCUrlRoute */ = {
 			isa = PBXGroup;
 			children = (
-				18323E161DF029D900AD385A /* NewFeature */,
 				180D49001D51849000E2F138 /* Base */,
 				180D490B1D51849000E2F138 /* Data */,
 				180D490D1D51849000E2F138 /* Ext */,
 			);
 			path = SDCUrlRoute;
 			sourceTree = "<group>";
+		};
+		96E568B91E2765A300311888 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				96E568C61E2765BC00311888 /* SDCWebManager.h */,
+				96E568C71E2765BC00311888 /* SDCWebManager.m */,
+				96E568C91E27666E00311888 /* SDCWebViewController.h */,
+				96E568CA1E27666E00311888 /* SDCWebViewController.m */,
+				96E568CC1E27667900311888 /* SDCWkWebViewController.h */,
+				96E568CD1E27667900311888 /* SDCWkWebViewController.m */,
+			);
+			path = WebView;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -204,6 +224,7 @@
 				TargetAttributes = {
 					186CF8B61CA1523B002BBF61 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 8S48W9HRTF;
 					};
 				};
 			};
@@ -243,17 +264,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E568CB1E27666E00311888 /* SDCWebViewController.m in Sources */,
 				180D49151D51849000E2F138 /* SDCUrlRouteCenter+DataReload.m in Sources */,
 				18F4B9251DEFBC3400EBE375 /* SDCUrlRouteMapping.m in Sources */,
 				180D49111D51849000E2F138 /* SDCUrlRouteData.m in Sources */,
 				186CF8C21CA1523B002BBF61 /* ViewController.m in Sources */,
+				96E568C81E2765BC00311888 /* SDCWebManager.m in Sources */,
 				180D49121D51849000E2F138 /* UIApplication+SDCUrlRoute.m in Sources */,
+				96E568D11E276DF800311888 /* SDCUrlRouteCenter+ToRoot.m in Sources */,
 				186CF8BF1CA1523B002BBF61 /* AppDelegate.m in Sources */,
 				186CF8BC1CA1523B002BBF61 /* main.m in Sources */,
-				18323E191DF029E300AD385A /* SDCUrlRouteCenter+ToRoot.m in Sources */,
 				180D49131D51849000E2F138 /* UIViewController+SDCUrlRoute.m in Sources */,
 				186CF8E71CA154BC002BBF61 /* TestViewController.m in Sources */,
+				96E568A81E27638F00311888 /* SDCUrlRouteCenter+VC.m in Sources */,
 				180D49101D51849000E2F138 /* SDCUrlRouteCenter.m in Sources */,
+				96E568CE1E27667900311888 /* SDCWkWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8S48W9HRTF;
 				INFOPLIST_FILE = UrlRouteSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shudong.urlRoute.UrlRouteSample;
@@ -366,6 +392,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8S48W9HRTF;
 				INFOPLIST_FILE = UrlRouteSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shudong.urlRoute.UrlRouteSample;

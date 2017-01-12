@@ -11,10 +11,32 @@
 
 #import "UIApplication+SDCUrlRoute.h"
 
-NSString* localRouteUrl(NSString *routekey)
-{
+#import "SDCWebManager.h"
+
+NSString* localRouteUrl(NSString *routekey) {
     return [LocalRouteUrlPrefix stringByAppendingString:routekey];
 }
+
+//NSString* encodeKeyInNecessary(NSString *key) {
+//    return [key stringByAppendingString:@"|M"];
+//}
+//
+//NSString* decodeKeyInNecessary(NSString *key) {
+//    
+//    if (![key hasSuffix:@"|M"]) {
+//        return key;
+//    }
+//    return [key substringToIndex:(key.length - 2 - 1)];
+//}
+//
+//
+//BOOL keyIsNecessary(NSString *key) {
+//
+//    if ([key hasSuffix:@"|M"]) {
+//        return YES;
+//    }
+//    return NO;
+//}
 
 
 
@@ -68,8 +90,8 @@ NSString* localRouteUrl(NSString *routekey)
     {
         if (!extraParams) {
             extraParams = [[SDCUrlRouteData sharedData] findParamsContainInUrlKey:urlkey];
-        }
         
+        }
         UIViewController *vc = [[SDCUrlRouteData sharedData]findVCWithUrlKey:urlkey extraParams:extraParams];
         [self goToVC:vc animated:animated URLRedirectType:type];
     }
@@ -103,9 +125,8 @@ NSString* localRouteUrl(NSString *routekey)
 #pragma mark Method
 -(void)goToWeb:(NSString *)urlStr animated:(BOOL)animated URLRedirectType:(UrlRedirectType)type
 {
-
-    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:urlStr]];
-    
+    UIViewController *vc = [SDCWebManager createWebVCWithUrl:urlStr WithTitle:nil];
+    [self goToVC:vc animated:YES URLRedirectType:kUrlRedirectPush];
 }
 
 -(void)goToVC:(UIViewController *)vc animated:(BOOL)animated URLRedirectType:(UrlRedirectType)type
