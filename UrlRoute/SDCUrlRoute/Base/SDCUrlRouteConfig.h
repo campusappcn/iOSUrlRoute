@@ -21,41 +21,41 @@ typedef enum
 
 
 
-#define SDCRoutePushToVC(ViewController,animated)\
+#define SDCRoutePushToVC(ViewController,beAnimated)\
 UINavigationController *nav = [UIApplication sharedApplication].currentViewController.navigationController;\
 NSAssert(nav != nil,@"****just UINavigationController can use push and pop****");\
-[nav pushViewController:ViewController animated:animated];
+[nav pushViewController:ViewController animated:beAnimated];
 
 
-#define SDCRoutePopVC(animated)\
+#define SDCRoutePopVC(beAnimated)\
 UINavigationController *nav = [UIApplication sharedApplication].currentViewController.navigationController;\
 NSAssert(nav != nil,@"****just UINavigationController can use push and pop****");\
-[nav popViewControllerAnimated:animated]
+[nav popViewControllerAnimated:beAnimated]
 
 
 
-#define SDCRoutePopToRoot(animated)\
+#define SDCRoutePopToRoot(beAnimated)\
 UINavigationController *nav = [UIApplication sharedApplication].currentViewController.navigationController;\
 NSAssert(nav != nil,@"****just UINavigationController can use push and pop****");\
-[nav popToRootViewControllerAnimated:animated];
+[nav popToRootViewControllerAnimated:beAnimated];
 
 
 
-#define SDCRoutePopToVC(ViewController,animated)\
+#define SDCRoutePopToVC(ViewController,beAnimated)\
 UINavigationController *nav = [UIApplication sharedApplication].currentViewController.navigationController;\
 NSAssert(nav != nil,@"****just UINavigationController can use push and pop****");\
-[nav popToViewController:ViewController animated:animated];
+[nav popToViewController:ViewController animated:beAnimated];
 
 
 
-#define SDCRoutePresentToVC(ViewController,animated)\
+#define SDCRoutePresentToVC(ViewController,beAnimated)\
 UINavigationController *nv=[[UINavigationController alloc]initWithRootViewController:ViewController];\
-[[UIApplication sharedApplication].currentViewController presentViewController:nv animated:animated completion:nil];
+[[UIApplication sharedApplication].currentViewController presentViewController:nv animated:beAnimated completion:nil];
 
 
-#define SDCRouteDismissToVC(animated)\
+#define SDCRouteDismissToVC(beAnimated)\
 UINavigationController *nav = [UIApplication sharedApplication].currentViewController.navigationController;\
-if(nav == nil){[[UIApplication sharedApplication].currentViewController dismissViewControllerAnimated:animated completion:nil];}else{[[UIApplication sharedApplication].currentViewController.navigationController dismissViewControllerAnimated:animated completion:nil];}\
+if(nav == nil){[[UIApplication sharedApplication].currentViewController dismissViewControllerAnimated:beAnimated completion:nil];}else{[[UIApplication sharedApplication].currentViewController.navigationController dismissViewControllerAnimated:beAnimated completion:nil];}\
 
 
 
