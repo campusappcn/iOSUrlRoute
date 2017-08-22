@@ -10,13 +10,13 @@ Pod::Spec.new do |spec|
   spec.source_files = 'UrlRoute/*.{h,m}'
 
   spec.subspec 'Base' do |s|
-    s.source_files = 'UrlRoute/Base/*.{h,m}'
-    s.public_header_files = 'UrlRoute/Base/*.h'
+    s.source_files = 'UrlRoute/SDCUrlRoute/Base/*.{h,m}'
+    s.public_header_files = 'UrlRoute/SDCUrlRoute/Base/*.h'
   end
 
-  spec.subspec 'Ext' do |ss|
-    ss.source_files = 'UrlRoute/Ext/*.{h,m}'
-    ss.public_header_files = 'UrlRoute/Ext/*.h'
+  spec.subspec 'Ext' do |s|
+    s.source_files = 'UrlRoute/SDCUrlRoute/Ext/*.{h,m}'
+    s.public_header_files = 'UrlRoute/SDCUrlRoute/Ext/*.h'
   end
   
 end
