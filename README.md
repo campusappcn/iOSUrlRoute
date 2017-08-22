@@ -1,7 +1,7 @@
-#URL Route
+# URL Route
 UrlRoute makes popVC,pushVC,presentVC actions easier and more dynamically, while decoupling VC from VC.
 
-###Feature
+### Feature
 
 1. Manage all view-jumping actions in a plist together, which makes changing routes more easier and routes can even be changed dynamically by server.
 2. Allow sending messages to next VC and callback to the pop VC.
@@ -9,12 +9,26 @@ UrlRoute makes popVC,pushVC,presentVC actions easier and more dynamically, while
 4. Launch your app via some scheme from a browser, or some other apps.
 
 
-####Feature in newFeature Branch
+#### Feature in newFeature Branch
 1. Add Method for change tabBar
 2. Support just creating `UIViewController` for doing more thing
 
 
-###Usage
+### How To Add To Project
+
+#### method 1
+just push the folder `UrlRoute` to you project.
+
+#### method 2
+use `cocoapods`.put the code into your podfile 
+
+````
+pod 'iOSUrlRoute', :git => 'https://github.com/campusappcn/iOSUrlRoute.git', :tag => 'newFeature-1.0'
+
+````
+
+
+### Usage
 
 1. The window rootView must be `UINavigationController`
 
@@ -99,4 +113,6 @@ UrlRoute makes popVC,pushVC,presentVC actions easier and more dynamically, while
 }
 
 ````
+
+
 
