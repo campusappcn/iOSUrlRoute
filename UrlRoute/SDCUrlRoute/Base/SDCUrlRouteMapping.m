@@ -21,12 +21,23 @@
     
     //这里可以更新动态更新map
     if (!_mappingData) {
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"SDCUrlRouteFile" ofType:@"plist" inDirectory:nil];
-        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:filePath];
-        _mappingData = dict;
+        
+        if (_mappingFilePath) {
+            NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:_mappingFilePath];
+            _mappingData = dict;
+        }
     }
     return _mappingData;
 
 }
+
+-(void)setMappingFilePath:(NSString *)mappingFilePath {
+
+    if (mappingFilePath) {
+        _mappingFilePath = mappingFilePath;
+        _mappingData = nil;
+    }
+}
+
 
 @end

@@ -20,6 +20,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    NSString *filePath = [[NSBundle mainBundle]pathForResource:@"SDCUrlRouteFile" ofType:@"plist"];
+    [SDCUrlRouteCenter addRoutePlistFilePath:filePath];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

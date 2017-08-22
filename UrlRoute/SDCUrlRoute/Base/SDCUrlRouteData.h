@@ -56,4 +56,17 @@
 
 -(Class)classFromUrlKey:(NSString *)urlkey;
 
+
+/**
+ 配置plist文件路径
+
+ @param filePath 文件路径
+ */
+-(void)addMappingFilePath:(NSString *)filePath;
+
+@property(nonatomic,strong)NSString *localRouteUrlScheme;
+
+@property(nonatomic,strong)NSString *thirdRouteUrlScheme;
+
+
 @end

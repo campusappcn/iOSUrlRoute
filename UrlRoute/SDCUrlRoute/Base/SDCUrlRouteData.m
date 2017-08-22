@@ -186,6 +186,7 @@
     
     NSString *classNameKey = nil;
     NSString *str = nil;
+    
     if ([key hasPrefix:LocalRouteUrlPrefix]) {
         str = [key substringFromIndex:LocalRouteUrlPrefix.length];
     }else if ([key hasPrefix:ThirdRouteUrlPrefix])
@@ -223,6 +224,28 @@
         
     }
     return NO;
+}
+
+
+-(void)addMappingFilePath:(NSString *)filePath {
+
+    self.routeMapping.mappingFilePath = filePath;
+}
+
+-(NSString *)localRouteUrlScheme {
+
+    if (!_localRouteUrlScheme) {
+        _localRouteUrlScheme = @"sdcLocal://";
+    }
+    return _localRouteUrlScheme;
+}
+
+-(NSString *)thirdRouteUrlScheme {
+
+    if (!_thirdRouteUrlScheme) {
+        _thirdRouteUrlScheme = @"sdcApp://";
+    }
+    return _thirdRouteUrlScheme;
 }
 
 @end

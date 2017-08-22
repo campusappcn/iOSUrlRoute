@@ -12,6 +12,7 @@
 #import "UIApplication+SDCUrlRoute.h"
 
 #import "SDCWebManager.h"
+#import "SDCUrlRouteCenter_Config.h"
 
 NSString* localRouteUrl(NSString *routekey) {
     return [LocalRouteUrlPrefix stringByAppendingString:routekey];
@@ -194,6 +195,26 @@ NSString* localRouteUrl(NSString *routekey) {
 {
     NSLog(@"goToErrorVC");
 }
+
+
+
+
++(void)addRoutePlistFilePath:(NSString *)filePath {
+
+    [[SDCUrlRouteData sharedData] addMappingFilePath:filePath];
+}
+
+
++(void)addLocalRouteUrlScheme:(NSString *)schemeKey {
+
+    [SDCUrlRouteData sharedData].localRouteUrlScheme = schemeKey;
+}
+
++(void)addThirdRouteUrlScheme:(NSString *)schemeKey {
+
+    [SDCUrlRouteData sharedData].thirdRouteUrlScheme = schemeKey;
+}
+
 
          
 @end

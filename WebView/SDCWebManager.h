@@ -18,7 +18,7 @@
  @param url urlStr
  @param title 标题
  */
-//+(void)goToWebViewWithUrl:(NSString *)url WithTitle:(NSString *)title;
++(void)goToWebViewWithUrl:(NSString *)url WithTitle:(NSString *)title;
 
 
 

@@ -63,9 +63,21 @@ if(nav == nil){[[UIApplication sharedApplication].currentViewController dismissV
 
 
 
-//配置 跳转的scheme
-#define LocalRouteUrlPrefix  @"campuslocal://"    /**< app内页面跳转的url */
-#define ThirdRouteUrlPrefix   @"CampusApp://"   /**< 第三方的跳转到app内 */
+/**
+ app内跳转scheme
+
+ @return schemekey
+ */
+#define LocalRouteUrlPrefix [SDCUrlRouteData sharedData].localRouteUrlScheme
+
+
+/**
+ app外跳转scheme
+
+ @return schemekey
+ */
+#define ThirdRouteUrlPrefix [SDCUrlRouteData sharedData].thirdRouteUrlScheme
+
 
 //配置跳转的key
 #define RouteToTestVC               @"toTestVC" /**<进入测试页面 */

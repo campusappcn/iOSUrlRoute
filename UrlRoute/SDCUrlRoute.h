@@ -16,4 +16,6 @@
 #import "UIApplication+SDCUrlRoute.h"
 #import "SDCUrlRouteCenter+DataReload.h"
 
+#import "SDCUrlRouteCenter_Config.h"
+
 #endif /* SDCUrlRoute_h */
