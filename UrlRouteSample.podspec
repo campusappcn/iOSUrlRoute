@@ -9,20 +9,14 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => 'https://github.com/campusappcn/iOSUrlRoute.git'}
   spec.source_files = 'UrlRoute/*.{h,m}'
 
-  spec.subspec 'SDCUrlRoute' do |s|
-    s.source_files = 'UrlRoute/*.{h,m}'
-    s.public_header_files = 'UrlRoute/*.h'
-
-    s.subspec 'Base' do |ss|
-      ss.source_files = 'UrlRoute/Base/*.{h,m}'
-      ss.public_header_files = 'UrlRoute/Base/*.h'
-    end
-
-    s.subspec 'Ext' do |ss|
-      ss.source_files = 'UrlRoute/Ext/*.{h,m}'
-      ss.public_header_files = 'UrlRoute/Ext/*.h'
-    end
-
+  spec.subspec 'Base' do |s|
+    s.source_files = 'UrlRoute/Base/*.{h,m}'
+    s.public_header_files = 'UrlRoute/Base/*.h'
   end
 
+  spec.subspec 'Ext' do |ss|
+    ss.source_files = 'UrlRoute/Ext/*.{h,m}'
+    ss.public_header_files = 'UrlRoute/Ext/*.h'
+  end
+  
 end
